@@ -42,7 +42,7 @@ content:
         type: object
         fields:
           - name: images
-            label: Images
+            label: Cover Images
             list: true
             type: image
       - name: sidebar

@@ -47,7 +47,7 @@
               {{- $path := replace .Path "\\" "/" -}}
               {{- if site.Params.editURL.sep -}}
                 {{- $path = replace $path "/" site.Params.editURL.sep -}}
-                {{- $sourcesDir = replace $sourcesDir "/" site.Params.editURL.sep -}}
+                {{- $sourcesDir = replace $sourceDir "/" site.Params.editURL.sep -}}
                 {{- $editURL = urls.JoinPath $editURL $sourceDir $path -}}
               {{- else -}}
                 {{- $editURL = urls.JoinPath $editURL $sourceDir $path -}}

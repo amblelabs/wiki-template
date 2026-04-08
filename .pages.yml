@@ -14,6 +14,7 @@ content:
       label: Glossary
       type: file
       path: data/en/termbase.yaml
+      format: yaml
     - name: wiki
       label: Wiki
       type: collection

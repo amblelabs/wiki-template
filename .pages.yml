@@ -24,6 +24,9 @@ content:
         - name: abbr
           label: Abbreviation
           type: string
+        - name: definition
+          label: Definition
+          type: text
         - name: link
           label: Link (slug)
           type: string

@@ -96,3 +96,15 @@ params:
   dateFormat: "January 2, 2006"
   # Display the author of the last modification
   displayUpdatedAuthor: true
+
+defaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+    weight: 1
+  #fr:
+  #  languageName: Français
+  #  weight: 2
+  #ja:
+  #  languageName: 日本語
+  #  weight: 3

@@ -63,7 +63,7 @@ params:
 
   editURL:
     enable: true
-    base: "https://app.pagescms.org/amblelabs/ait-wiki/main/collection/wiki/edit/content"
+    base: "https://app.pagescms.org/amblelabs/wiki-template/main/collection/wiki/edit/content"
     sep: "%2F"
 
   search:

@@ -16,17 +16,20 @@ content:
       path: data/en/termbase.yaml
       format: yaml
       list: 
+        min: 1
         collapsible:
           summary: "{term}"
           collapsed: true
       fields:
         - name: term
+          label: Term
           type: string
           required: true
         - name: abbr
           label: Abbreviation
           type: string
         - name: link
+          label: Link (slug)
           type: string
     - name: wiki
       label: Wiki

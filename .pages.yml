@@ -11,11 +11,12 @@ content:
     type: collection
     path: content/en
     format: yaml-frontmatter
-    filename: "{primary}.md"
+    filename: 
+      template: "{primary}.md"
+      field: create
     view:
       fields: 
         - title
-        - primary
     fields:
       - { name: title, label: Title, type: string, required: true }
       #- { name: filename, label: Filename Override, type: string }

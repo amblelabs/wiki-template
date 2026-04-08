@@ -15,6 +15,16 @@ content:
       type: file
       path: data/en/termbase.yaml
       format: yaml
+      list: true
+      fields:
+        - name: term
+          type: string
+          required: true
+        - name: abbr
+          label: Abbreviation
+          type: string
+        - name: link
+          type: string
     - name: wiki
       label: Wiki
       type: collection

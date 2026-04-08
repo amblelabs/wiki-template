@@ -26,7 +26,7 @@ or
 {{- with $match }}
   <abbr title="{{ .definition | plainify }}">
     {{- $external := false -}}
-    {{- $link := nil -}}
+    {{- $link := "" -}}
     
     {{- with .link -}}
       {{- $external = strings.HasPrefix . "http" -}}

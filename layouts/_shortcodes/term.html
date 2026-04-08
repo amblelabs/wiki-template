@@ -25,11 +25,16 @@ or
 
 {{- with $match }}
   <abbr title="{{ .definition | plainify }}">
-    <a {{- if .link }}
-      href="{{- cond (strings.HasPrefix .link "/") (.link | relURL) .link -}}"
-      {{- with (strings.HasPrefix $link "http") -}}target="_blank" rel="noreferrer"{{- end -}}
+    {{- with .link -}}
+      {{- $external := strings.HasPrefix . "http" -}}
+      {{- if hasPrefix . "/" -}}
+        {{- $link = relLangURL (strings.TrimPrefix "/" .) -}}
       {{- end -}}
-    >
+    {{- end -}}
+    <a {{- if .link }}
+      href="{{- .link -}}"
+      {{- with $external -}}target="_blank" rel="noreferrer"{{- end -}}
+    {{- end -}}>
       {{- $entry -}}
     </a>
   </abbr>

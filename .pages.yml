@@ -25,16 +25,10 @@ content:
         type: number
       - name: next
         label: Next page (slug)
-        type: reference
-        options:
-          collection: wiki
-          search: "title,filename"
+        type: string
       - name: prev
         label: Previous page (slug)
-        type: reference
-        options:
-          collection: wiki
-          search: "title,filename"
+        type: string
       - name: params
         label: Parameters
         type: object

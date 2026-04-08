@@ -101,6 +101,7 @@ defaultContentLanguage: en
 languages:
   en:
     languageName: English
+    contentDir: content/en
     weight: 1
   #fr:
   #  languageName: Français

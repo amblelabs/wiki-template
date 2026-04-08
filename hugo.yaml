@@ -9,6 +9,13 @@ module:
   imports:
     - path: github.com/imfing/hextra
 
+modules:
+    mounts:
+    - source: content
+      target: content
+    - source: prebuild/public/src
+      target: content
+
 outputs:
   home: [html, llms]
 

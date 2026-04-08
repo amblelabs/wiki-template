@@ -8,3 +8,4 @@ next: docs/folder/
 A simple demo page.
 
 {{< term "SEO" >}}
+{{< term "static site generator" >}}

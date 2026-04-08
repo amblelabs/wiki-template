@@ -34,13 +34,18 @@ or
         {{- $link = relLangURL (strings.TrimPrefix "/" .) -}}
       {{- end -}}
     {{- end -}}
-    
-    <a {{- with $link }}
-      href="{{- . -}}"
-      {{- with $external -}}target="_blank" rel="noreferrer"{{- end -}}
-    {{- end -}}>
+
+    {{- with $link -}}
+      <a href="{{- . -}}"
+        {{- with $external -}}
+          target="_blank" rel="noreferrer"
+        {{- end -}}
+      >
+    {{- end -}}
       {{- $entry -}}
-    </a>
+    {{- with $link -}}
+      </a>
+    {{- end -}}
   </abbr>
 {{- else }}
   {{- $entry -}}

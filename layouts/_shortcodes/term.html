@@ -25,8 +25,9 @@ or
 
 {{- with $match }}
   <abbr title="{{ .definition | plainify }}">
-    <a {{- if .link -}}href="{{- cond (strings.HasPrefix .link "/") (.link | relURL) .link -}}"
-        {{- with .external -}}target="_blank" rel="noreferrer"{{- end -}}
+    <a {{- if .link }}
+      href="{{- cond (strings.HasPrefix .link "/") (.link | relURL) .link -}}"
+      {{- with .external -}}target="_blank" rel="noreferrer"{{- end -}}
       {{- end -}}
     >
       {{- $entry -}}
